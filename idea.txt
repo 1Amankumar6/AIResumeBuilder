@@ -1,0 +1,105 @@
+Setup backend (auth + resume CRUD).
+
+Setup frontend (forms + UI).
+
+Integrate AI API.
+
+Enable PDF export.
+
+Add auth + DB connection.
+
+Deploy & polish.
+
+MongoDB schema:
+
+User: name, email, password.
+
+Resume: userId, personalInfo, skills, experience, education, aiSummary, templateId.
+
+Secure passwords → bcryptjs.
+
+Protect routes with JWT middleware.
+
+User can save, edit, delete resumes.
+--------------------------------------------------------------------------------------------------------------
+Step 1: Backend (Auth + Basic Routes)
+
+Start with backend skeleton first.
+
+Setup:
+
+Express server running.
+
+MongoDB connection.
+
+JWT-based authentication (signup/login).
+
+Dummy test route (e.g., /api/test) so frontend can confirm connection.
+--------------------------------------------------------------------------------------------------------------
+Step 2: Frontend Setup
+
+Create React app (with Tailwind & Router).
+
+Build basic pages:
+
+Login, Signup.
+
+Resume Builder (form UI only, no backend calls yet).
+
+Dashboard (list of resumes, dummy data at first).
+
+Connect auth pages with backend JWT routes.
+
+Store JWT in HttpOnly cookie or localStorage (if simpler for now).
+
+Create an Axios instance with JWT header.
+
+👉 At this stage:
+
+User can signup/login/logout.
+
+Protected routes work.
+
+UI is set up.
+--------------------------------------------------------------------------------------------------------------
+Step 3: Resume Features (Frontend + Backend)
+
+Backend:
+
+Resume CRUD routes (/create, /all, /update/:id, /delete/:id).
+
+Frontend:
+
+Hook Resume Builder form → Save to backend.
+
+Fetch & display saved resumes in dashboard.
+--------------------------------------------------------------------------------------------------------------
+Step 4: AI Integration
+
+Backend:
+
+Add AI route /api/ai/generateSummary.
+
+Frontend:
+
+Add "✨ Improve with AI" button in Resume Builder.
+
+Call AI API → Display result → Allow user to insert into resume.
+--------------------------------------------------------------------------------------------------------------
+Step 5: Resume Export
+
+Add PDF download option.
+
+Start with frontend (jspdf) → later optimize with backend if needed.
+--------------------------------------------------------------------------------------------------------------
+Step 6: Final Polish + Deployment
+
+Add toast notifications.
+
+Apply Framer Motion animations.
+
+Deploy backend (Render/Railway) & frontend (Vercel/Netlify).
+
+Connect with MongoDB Atlas.
+--------------------------------------------------------------------------------------------------------------
+Backend Auth → Frontend Auth → Resume CRUD → AI → PDF Export → Polish & Deploy

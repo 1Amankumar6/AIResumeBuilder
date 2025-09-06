@@ -1,0 +1,30 @@
+client/
+ ┣ components/
+ ┣ pages/
+ ┣ context/
+ ┣ services/
+ ┣ utils/
+ ┣ App.js
+
+client/
+ ┣ components/
+ ┃ ┣ resume/
+ ┃ ┃ ┣ Header.jsx
+ ┃ ┃ ┣ Experience.jsx
+ ┃ ┃ ┣ Skills.jsx
+ ┃ ┃ ┣ Education.jsx
+ ┃ ┃ ┗ TemplateWrapper.jsx
+ ┃ ┣ templates/
+ ┃ ┃ ┣ Template1.jsx
+ ┃ ┃ ┣ Template2.jsx
+ ┃ ┃ ┗ Template3.jsx
+
+
+
+backend/
+ ┣ routes/
+ ┣ controllers/
+ ┣ models/
+ ┣ middlewares/
+ ┣ utils/
+ ┣ server.js
